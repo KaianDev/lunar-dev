@@ -3,7 +3,7 @@ import { Sheet, SheetContent, SheetTrigger } from "./sheet";
 
 const MobileMenu = () => {
   return (
-    <Sheet >
+    <Sheet>
       <SheetTrigger>
         <MenuIcon size={40} className="text-white" />
       </SheetTrigger>
@@ -11,24 +11,20 @@ const MobileMenu = () => {
         side="left"
         className="flex flex-col gap-2 bg-black/90 py-10 text-white"
       >
-        <a href="/">
-          <div className="p-2 text-2xl duration-200 hover:bg-dark">Início</div>
+        <a href="/" className="p-2 text-2xl duration-200 hover:bg-luna-header">
+          Início
         </a>
-        <a href="/">
-          <div className="p-2 text-2xl duration-200 hover:bg-dark">Sobre</div>
+        <a href="/" className="p-2 text-2xl duration-200 hover:bg-luna-header">
+          Sobre
         </a>
-        <a href="/">
-          <div className="p-2 text-2xl duration-200 hover:bg-dark">
-            Serviços
-          </div>
+        <a href="/" className="p-2 text-2xl duration-200 hover:bg-luna-header">
+          Serviço
         </a>
-        <a href="/">
-          <div className="p-2 text-2xl duration-200 hover:bg-dark">Contato</div>
+        <a href="/" className="p-2 text-2xl duration-200 hover:bg-luna-header">
+          Contato
         </a>
-        <a href="/">
-          <div className="p-2 text-2xl duration-200 hover:bg-dark">
-            Área do Cliente
-          </div>
+        <a href="/" className="p-2 text-2xl duration-200  hover:bg-luna-header">
+          Área do Cliente
         </a>
       </SheetContent>
     </Sheet>

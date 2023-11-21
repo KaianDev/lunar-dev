@@ -18,8 +18,8 @@ module.exports = {
     extend: {
       colors: {
         "luna-header": "#191b1f",
-        "luna-link": "#4d3c6b93",
-        "luna-button": "#4d3c6b",
+        "luna-link": "#483285",
+        "luna-button": "#6063b8",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -7,7 +7,6 @@ import NavItem from "./NavItem";
 
 const Header = () => {
   const [scroll, setScroll] = useState(0);
-  const [width, setWidth] = useState(0);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

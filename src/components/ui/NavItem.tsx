@@ -8,8 +8,8 @@ const NavItem = ({ label, variant }: NavItemProps) => {
       <a
         href=""
         className={`${
-          variant ? variant : "bg-luna-link"
-        } hover:bg-luna-purple-link/50 cursor-pointer rounded px-3 py-2 text-xl text-white duration-200`}
+          variant ? variant : "bg-luna-link/50"
+        } hover:bg-luna-link cursor-pointer rounded px-3 py-2 text-xl text-white duration-200`}
       >
         {label}
       </a>
