@@ -15,11 +15,12 @@ const Header = () => {
     });
   }, [scroll]);
   return (
-    <header className="fixed left-0 right-0 top-0 mx-auto">
+    <header
+      className={`${scroll === 0 ? "md:bg-transparent" : "md:bg-black"}
+      bg-luna-dark fixed left-0 right-0 top-0 z-20 mx-auto`}
+    >
       <div
-        className={`bg-luna-header container flex items-center px-3 py-2 duration-200 ease-in md:justify-between md:px-4 md:py-3 ${
-          scroll === 0 ? "md:bg-transparent" : "md:bg-black"
-        }`}
+        className={`container flex items-center px-3 py-2 duration-200 ease-in md:justify-between md:px-4 md:py-3 `}
       >
         <div className=" flex items-center justify-center md:hidden">
           <MobileMenu />

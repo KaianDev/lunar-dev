@@ -17,9 +17,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        "luna-header": "#191b1f",
+        "luna-dark": "#191b1f",
         "luna-link": "#483285",
         "luna-button": "#6063b8",
+        "luna-blue-dark": "#1c212f",
+        "luna-gray": "#9B9B9B",
+        "luna-pink": "#ffa7ff",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
