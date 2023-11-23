@@ -1,27 +1,14 @@
-"use client";
 import { questions } from "@/data/questions";
 import Title from "./Title";
-import { useState } from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "./accordion";
+import QuestionItem from "./QuestionItem";
 
 const QuestionSection = () => {
-  const [active, setActive] = useState<string>("");
-
-  const handleActive = (questionNumber: string) => {
-    if (active === "") {
-      setActive(questionNumber);
-    } else if (active === questionNumber) {
-      setActive("");
-    } else {
-      setActive(questionNumber);
-    }
-  };
-
   return (
     <section className="bg-luna-blue-dark">
       <div className="container px-4 py-10">
@@ -32,23 +19,7 @@ const QuestionSection = () => {
           className="flex flex-col items-start justify-around gap-4 md:flex-row md:flex-wrap"
         >
           {questions.map((item) => (
-            <AccordionItem
-              key={item.number}
-              value={item.number}
-              className="group flex min-h-[110px] w-full cursor-pointer flex-col gap-2 rounded bg-luna-dark p-4 duration-1000 md:max-w-[48%]"
-            >
-              <AccordionTrigger>
-                <div className="flex gap-2 rounded bg-luna-dark text-white group-hover:text-luna-pink duration-200">
-                  <h4 className="from-luna-medium-dark t flex w-10 items-center justify-center rounded-tr-md bg-gradient-to-b p-1 text-xl group-hover:text-luna-pink">
-                    {item.number}
-                  </h4>
-                  <p className="text-start">{item.question}</p>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="text-luna-gray">
-                {item.response}
-              </AccordionContent>
-            </AccordionItem>
+            <QuestionItem key={item.number} question={item} />
           ))}
         </Accordion>
         {/* <div className="flex flex-col items-start justify-around gap-2 md:flex-row md:flex-wrap">
