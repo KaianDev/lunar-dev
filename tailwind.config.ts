@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       colors: {
         "luna-dark": "#191b1f",
+        "luna-medium-dark": "#2b2b2b",
         "luna-link": "#483285",
         "luna-button": "#6063b8",
         "luna-blue-dark": "#1c212f",

@@ -82,6 +82,13 @@
   background-size: cover;
 }
 
+.bg-image-2 {
+  background-image: url("/assets/bg-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 html,
 body {
   height: 100%;
