@@ -1,15 +1,17 @@
 interface NavItemProps {
   label: string;
   variant?: string;
+  href?: string;
 }
-const NavItem = ({ label, variant }: NavItemProps) => {
+const NavItem = ({ label, variant, href }: NavItemProps) => {
   return (
     <li>
       <a
-        href=""
+        href={href}
+        target={`${variant ? "_blank" : ""}`}
         className={`${
           variant ? variant : "bg-luna-link/50"
-        } hover:bg-luna-link cursor-pointer rounded px-3 py-2 text-xl text-white duration-200`}
+        } cursor-pointer rounded px-3 py-2 text-xl text-white shadow-sm duration-200 hover:bg-luna-link`}
       >
         {label}
       </a>

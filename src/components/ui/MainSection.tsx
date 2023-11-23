@@ -2,9 +2,11 @@ import Image from "next/image";
 
 const MainSection = () => {
   return (
-    <main className="container mx-auto flex min-h-screen flex-1 items-center justify-center p-4 ">
+    <main
+      className="container mx-auto flex min-h-[calc(100vh-88px)] flex-1 items-center justify-center p-4 "
+    >
       <div className="grid grid-cols-1 justify-around gap-4 pb-4 pt-16 md:grid-cols-2 md:py-0">
-        <div className="max-h-90 bg-luna-dark flex max-w-lg flex-col gap-4 p-4 text-center text-white md:mt-0">
+        <div className="max-h-90 flex max-w-lg flex-col gap-4 bg-luna-dark p-4 text-center text-white md:mt-0">
           <h2 className="text-2xl font-bold">
             Agência de <br /> Desenvolvimento Web
           </h2>
@@ -16,7 +18,7 @@ const MainSection = () => {
             Faça seu orçamento
           </button>
         </div>
-        <div className="max-h-90 bg-luna-dark flex max-w-lg flex-col gap-4 p-4 text-center text-white md:flex-1">
+        <div className="max-h-90 flex max-w-lg flex-col gap-4 bg-luna-dark p-4 text-center text-white md:flex-1">
           <h2 className="text-2xl font-bold">Últimos Serviço</h2>
           <Image
             src="/assets/workout.png"
