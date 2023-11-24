@@ -53,7 +53,7 @@ const MainSection = () => {
           </button>
         </div>
       </div>
-      <div className="absolute bottom-4 flex animate-bounce flex-col opacity-70">
+      <div className="absolute bottom-4 hidden animate-bounce flex-col opacity-70 sm:flex">
         <MouseIcon size={35} className="-mb-2 text-white" />
         <ChevronDown size={35} className="text-luna-pink" />
       </div>
