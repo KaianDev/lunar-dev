@@ -18,8 +18,8 @@ const Header = () => {
       data-aos-delay="100"
       data-aos-duration="400"
       data-aos-easing="linear"
-      className="sticky top-0
-      z-20 mx-auto w-full bg-luna-dark shadow-md md:bg-white/5 md:backdrop-blur-lg"
+      className="fixed top-0 z-20
+      mx-auto w-full bg-luna-dark shadow-md md:sticky md:bg-white/5 md:backdrop-blur-lg"
     >
       <div
         className={`container flex items-center px-3 py-2 duration-200 ease-in md:justify-between md:px-4 md:py-3 `}
