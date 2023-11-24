@@ -17,12 +17,13 @@ const QuestionItem = ({ question, index }: QuestionItemProps) => {
 
   return (
     <AccordionItem
+      id={question.number}
       data-aos="zoom-in"
       data-aos-delay="100"
       data-aos-duration="300"
       data-aos-easing="linear"
       value={question.number}
-      className="min-h-full group flex w-full cursor-pointer flex-col gap-2 rounded bg-luna-dark px-4 duration-1000"
+      className="group flex w-full cursor-pointer flex-col gap-2 rounded bg-luna-dark px-4 duration-1000 sm:min-h-[105px] lg:min-h-[81px]"
     >
       <AccordionTrigger>
         <div className="flex gap-2 rounded bg-luna-dark text-white duration-200 group-hover:text-luna-pink">
