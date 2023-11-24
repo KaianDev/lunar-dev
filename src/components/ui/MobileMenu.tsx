@@ -1,5 +1,6 @@
 import { MenuIcon } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "./sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./sheet";
+import MobileMenuItem from "./MobileMenuItem";
 
 const MobileMenu = () => {
   return (
@@ -11,21 +12,21 @@ const MobileMenu = () => {
         side="left"
         className="flex flex-col gap-2 bg-black/90 py-10 text-white"
       >
-        <a href="/" className="hover:bg-luna-dark p-2 text-2xl duration-200">
-          Início
-        </a>
-        <a href="/" className="hover:bg-luna-dark p-2 text-2xl duration-200">
-          Sobre
-        </a>
-        <a href="/" className="hover:bg-luna-dark p-2 text-2xl duration-200">
-          Serviço
-        </a>
-        <a href="/" className="hover:bg-luna-dark p-2 text-2xl duration-200">
+        <MobileMenuItem href="/">Início</MobileMenuItem>
+        <MobileMenuItem href="#about">Sobre</MobileMenuItem>
+        <MobileMenuItem href="#services">Serviços</MobileMenuItem>
+        <MobileMenuItem
+          target="_blank"
+          href="https://discord.com/invite/Q6mY9Qn2xY"
+        >
           Contato
-        </a>
-        <a href="/" className="hover:bg-luna-dark p-2 text-2xl  duration-200">
+        </MobileMenuItem>
+        <MobileMenuItem
+          className="bg-luna-button/60 hover:bg-luna-button"
+          href="#"
+        >
           Área do Cliente
-        </a>
+        </MobileMenuItem>
       </SheetContent>
     </Sheet>
   );

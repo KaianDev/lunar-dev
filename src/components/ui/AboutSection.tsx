@@ -1,12 +1,20 @@
+"use client";
 import Image from "next/image";
 import Title from "./Title";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const AboutSection = () => {
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
   return (
     <section id="about" className="bg-luna-blue-dark pb-10">
       <div className="container mx-auto px-4">
         <Title label="Sobre nós" />
-        <div className="flex flex-col gap-8 md:flex-row-reverse">
+        <div className="flex flex-col gap-8 md:flex-row-reverse md:items-center">
           <Image
             src="/assets/logo.png"
             alt="Logo LunaDev"
@@ -14,8 +22,16 @@ const AboutSection = () => {
             width={0}
             height={0}
             className="mx-auto h-64 w-auto"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            data-aos-easing="linear"
           />
-          <div className="whitespace flex flex-col gap-1 rounded bg-luna-dark p-4 text-sm text-white">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="500"
+            data-aos-easing="linear"
+            className="whitespace flex flex-col gap-1 rounded bg-luna-dark p-4 text-sm text-white"
+          >
             <p>
               Bem-vindo à LunarDev, sua passagem para a inovação digital e o
               aprimoramento tecnológico. Somos mais do que uma simples agência

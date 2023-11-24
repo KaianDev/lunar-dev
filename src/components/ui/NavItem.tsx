@@ -1,21 +1,17 @@
-interface NavItemProps {
-  label: string;
-  variant?: string;
-  href?: string;
-}
-const NavItem = ({ label, variant, href }: NavItemProps) => {
+import { cn } from "@/lib/utils";
+import { ComponentProps } from "react";
+
+const NavItem = ({ children, className, ...props }: ComponentProps<"a">) => {
   return (
-    <li>
-      <a
-        href={href}
-        target={`${variant ? "_blank" : ""}`}
-        className={`${
-          variant ? variant : "bg-luna-link/50"
-        } cursor-pointer rounded px-3 py-2 text-xl text-white shadow-sm duration-200 hover:bg-luna-link`}
-      >
-        {label}
-      </a>
-    </li>
+    <a
+      className={cn(
+        "cursor-pointer rounded bg-luna-link/60 px-3 py-2 text-xl text-white shadow-sm duration-200 hover:bg-luna-link",
+        className,
+      )}
+      {...props}
+    >
+      {children}
+    </a>
   );
 };
 
