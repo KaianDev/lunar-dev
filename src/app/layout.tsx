@@ -8,8 +8,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "LunarDev",
-  description: "",
+  title: "Software House LunarDev",
+  description:
+    "Software House Lunar Dev: Códigos terrestres, resultados estelares.",
 };
 
 export default function RootLayout({
